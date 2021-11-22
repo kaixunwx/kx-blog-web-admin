@@ -1,0 +1,89 @@
+.article-bar {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  background-color: #f4f4f4;
+
+  .article-bar__link-box {
+    padding-left: 24px;
+  }
+
+  .article-bar__input-box {
+    display: flex;
+    width: 100%;
+    margin: 8px 16px 8px 8px;
+    border: 1px solid #ccc;
+    border-radius: 21px;
+    background-color: #fff;
+    position: relative;
+
+    .article-bar__title {
+      width: 100%;
+      margin-left: 4px;
+      border-radius: 18px;
+      padding: 8px;
+      padding-right: 88px;
+      font-size: 18px;
+      line-height: 24px;
+      background-color: #fff;
+      border: 0;
+    }
+
+    .article-bar__number {
+      line-height: 36px;
+      font-size: 20px;
+      margin-right: 8px;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .article-bar__button-box {
+    display: flex;
+    padding: 8px 32px 8px 0;
+
+    .btn-save {
+      height: 40px;
+      margin-right: 16px;
+      padding: 0 16px;
+      font-size: 16px;
+      color: #fc5531;
+      border: 1px solid #fc5531;
+      border-radius: 18px;
+      white-space: nowrap;
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+    .btn-publish {
+      padding: 0 16px;
+      font-size: 16px;
+      color: #fff;
+      border: none;
+      border-radius: 18px;
+      white-space: nowrap;
+      background: #fc5531;
+      cursor: pointer;
+    }
+  }
+}
+
+.article-footer {
+  margin-top: 10px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+
+  .article-editor {
+    height: 100%;
+  }
+
+  .article-options {
+    margin-left: auto;
+
+    .item {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}
