@@ -1,8 +1,12 @@
 import request from '@/utils/request'
+import qs from 'qs'
 
 export function getAllTypes() {
+    const params = {
+        sort: ['createTime,desc']
+    }
     return request({
-        url: 'api/type',
+        url: 'api/type?' + qs.stringify(params, { indices: false}),
         method: 'get',
     })
 }

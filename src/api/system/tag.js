@@ -1,8 +1,12 @@
 import request from '@/utils/request'
+import qs from 'qs'
 
 export function getAllTags() {
+    const params = {
+        sort: ['createTime,desc']
+    }
     return request({
-        url: 'api/tag',
+        url: 'api/tag?' + qs.stringify(params, { indices: false }),
         method: 'get',
     })
 }

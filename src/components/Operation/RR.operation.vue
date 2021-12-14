@@ -16,11 +16,9 @@ export default {
   },
   methods: {
     toQuery() {
-      console.log('搜索')
       this.$emit('query')
     },
     resetQuery() {
-      console.log('重置')
       this.$emit('reset')
     }
   }
